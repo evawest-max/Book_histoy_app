@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <nav>
+                <ul>
+                    <a href=""><li>About</li></a>
+                    <a href="https://www.bookrix.com/books.html"><li>Online books</li></a>
+                </ul>
+            </nav>
+            <div class="all">
+                <div class="kb">
+                    <h1 style="color: gold;"><b>Simple read history</b> </h1>
+                    
+                    <a href="https://www.bookrix.com/books.html">
+                        <p>
+                            Checkout cool books to read
+                        </p>
+                    </a>
+                    <p><q>list the books you hav read</q></p>
+                </div>
+            
+                <div class="form" >
+                    <form action="sub"  >
+                    
+                        <div class="input">
+                            <input type="text" name="title" title="type the name of book" id="title" placeholder="Title" >
+                            <br>
+
+                            <input type="tel" name="" title="type the name of authur" id="authur" placeholder="Authur"  >
+                            <br>
+
+                            <input type="number" name="gender" title="type the number of pages" id="pages" placeholder="pages">
+                        </div>
+
+                        
+                        <div class="btn">
+                            <button type="button" onclick="add()">Add</button>
+                            <button type="button" onclick="remove()">Clear Database</button>
+                            <button type="button" onclick="post()">Post</button>
+                        </div>
+                
+                    </form>
+                </div>
+            </div>
+            <div id="books">
+                <div id="authur_div" style="color: purple; font-size: larger; font-weight: bold;">list of book</div>
+                <div id="book_div" style="color: purple; font-size: large; font-weight:500;"></div> 
+            </div>
+        </div>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
